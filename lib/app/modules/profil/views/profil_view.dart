@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../controllers/next_controller.dart';
+import '../controllers/profil_controller.dart';
 
-class NextView extends GetView<NextController> {
-  const NextView({Key? key}) : super(key: key);
+class ProfilView extends GetView<ProfilController> {
+  const ProfilView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue,
       appBar: AppBar(
-        backgroundColor: Colors.green,
-        title: const Text('NextView'),
+        title: const Text('ProfilView'),
         centerTitle: true,
       ),
       body: const Center(
         child: Text(
-          'NextView is working',
+          'ProfilView is working',
           style: TextStyle(fontSize: 20),
         ),
       ),

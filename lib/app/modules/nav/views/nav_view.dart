@@ -13,13 +13,24 @@ class NavView extends GetView<NavController> {
         centerTitle: true,
       ),
       body: Obx(
-        () => controller.myWidgets.elementAt(controller.indexWidget.value),
+        () => AnimatedSwitcher(
+          duration: Duration(milliseconds: 1000), // Durasi animasi
+          transitionBuilder: (child, animation) {
+            return ScaleTransition(
+              scale: animation,
+              child: child,
+            );
+          },
+          child: controller.myWidgets[controller.indexWidget.value],
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         showSelectedLabels: false,
         showUnselectedLabels: false,
         type: BottomNavigationBarType.fixed,
-        onTap: (value) => controller.changeIndexBottomNav(value),
+        onTap: (value) {
+          controller.changeIndexBottomNav(value);
+        },
         items: [
           BottomNavigationBarItem(
             label: "",
