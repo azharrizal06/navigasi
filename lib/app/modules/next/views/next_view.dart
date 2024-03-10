@@ -9,10 +9,7 @@ class NextView extends GetView<NextController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('NextView'),
-        centerTitle: true,
-      ),
+      
       body: const Center(
         child: Text(
           'NextView is working',
