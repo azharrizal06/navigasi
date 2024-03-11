@@ -13,10 +13,10 @@ class RiwayatView extends GetView<RiwayatController> {
     var lebar = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('RiwayatView'),
+        title: Text('RiwayatView'),
         centerTitle: true,
       ),
-      body: const Center(
+      body: Center(
         child: Text(
           'RiwayatView is working',
           style: TextStyle(fontSize: 20),

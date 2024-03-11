@@ -6,17 +6,17 @@ import 'package:navigasi2/app/routes/app_pages.dart';
 import '../controllers/profil_controller.dart';
 
 class ProfilView extends GetView<ProfilController> {
-  const ProfilView({Key? key}) : super(key: key);
+  ProfilView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     var tinggi = MediaQuery.of(context).size.height;
     var lebar = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ProfilView'),
+        title: Text('ProfilView'),
         centerTitle: true,
       ),
-      body: const Center(
+      body: Center(
         child: Text(
           'ProfilView is working',
           style: TextStyle(fontSize: 20),
@@ -38,7 +38,7 @@ class ProfilView extends GetView<ProfilController> {
           iconnav(
             lebar: lebar,
             tinggi: tinggi,
-            action: (value) {
+            action: (e) {
               Get.offAllNamed(Routes.HOME);
             },
             img: "assets/nav-home.png",
@@ -50,7 +50,7 @@ class ProfilView extends GetView<ProfilController> {
           iconnav(
             lebar: lebar,
             tinggi: tinggi,
-            action: (value) {
+            action: (e) {
               Get.offAllNamed(Routes.PESANAN);
             },
             img: "assets/nav-order.png",
@@ -62,7 +62,7 @@ class ProfilView extends GetView<ProfilController> {
           iconnav(
             lebar: lebar,
             tinggi: tinggi,
-            action: (value) {
+            action: (e) {
               Get.offAllNamed(Routes.RIWAYAT);
             },
             img: "assets/nav-history.png",
@@ -74,7 +74,7 @@ class ProfilView extends GetView<ProfilController> {
           iconnav(
             lebar: lebar,
             tinggi: tinggi,
-            action: (value) {
+            action: (e) {
               Get.offAllNamed(Routes.PROFIL);
             },
             img: "assets/nav-profile.png",

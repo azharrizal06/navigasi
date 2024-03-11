@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:navigasi2/app/modules/home/views/home_view.dart';
 import 'package:navigasi2/app/routes/app_pages.dart';
 
-import '../../home/views/home_view.dart';
 import '../controllers/pesanan_controller.dart';
 
 class PesananView extends GetView<PesananController> {
-  const PesananView({Key? key}) : super(key: key);
+  PesananView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     var tinggi = MediaQuery.of(context).size.height;
     var lebar = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('PesananView'),
+        title: Text('PesananView'),
         centerTitle: true,
       ),
-      body: const Center(
+      body: Center(
         child: Text(
           'PesananView is working',
           style: TextStyle(fontSize: 20),
