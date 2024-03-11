@@ -38,7 +38,7 @@ class RiwayatView extends GetView<RiwayatController> {
           iconnav(
             lebar: lebar,
             tinggi: tinggi,
-            action: (value) {
+            action: (e) {
               Get.offAllNamed(Routes.HOME);
             },
             img: "assets/nav-home.png",
@@ -50,7 +50,7 @@ class RiwayatView extends GetView<RiwayatController> {
           iconnav(
             lebar: lebar,
             tinggi: tinggi,
-            action: (value) {
+            action: (e) {
               Get.offAllNamed(Routes.PESANAN);
             },
             img: "assets/nav-order.png",
@@ -62,7 +62,7 @@ class RiwayatView extends GetView<RiwayatController> {
           iconnav(
             lebar: lebar,
             tinggi: tinggi,
-            action: (value) {
+            action: (e) {
               Get.offAllNamed(Routes.RIWAYAT);
             },
             img: "assets/nav-history.png",
@@ -74,7 +74,7 @@ class RiwayatView extends GetView<RiwayatController> {
           iconnav(
             lebar: lebar,
             tinggi: tinggi,
-            action: (value) {
+            action: (e) {
               Get.offAllNamed(Routes.PROFIL);
             },
             img: "assets/nav-profile.png",

@@ -24,17 +24,17 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.PESANAN,
-      page: () => const PesananView(),
+      page: () => PesananView(),
       binding: PesananBinding(),
     ),
     GetPage(
       name: _Paths.PROFIL,
-      page: () => const ProfilView(),
+      page: () => ProfilView(),
       binding: ProfilBinding(),
     ),
     GetPage(
       name: _Paths.RIWAYAT,
-      page: () => const RiwayatView(),
+      page: () => RiwayatView(),
       binding: RiwayatBinding(),
     ),
   ];

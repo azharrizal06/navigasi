@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:navigasi2/app/modules/home/views/home_view.dart';
 import 'package:navigasi2/app/routes/app_pages.dart';
 
+import '../../home/views/home_view.dart';
 import '../controllers/pesanan_controller.dart';
 
 class PesananView extends GetView<PesananController> {
@@ -38,7 +38,7 @@ class PesananView extends GetView<PesananController> {
           iconnav(
             lebar: lebar,
             tinggi: tinggi,
-            action: (value) {
+            action: (e) {
               Get.offAllNamed(Routes.HOME);
             },
             img: "assets/nav-home.png",
@@ -50,7 +50,7 @@ class PesananView extends GetView<PesananController> {
           iconnav(
             lebar: lebar,
             tinggi: tinggi,
-            action: (value) {
+            action: (e) {
               Get.offAllNamed(Routes.PESANAN);
             },
             img: "assets/nav-order.png",
@@ -62,7 +62,7 @@ class PesananView extends GetView<PesananController> {
           iconnav(
             lebar: lebar,
             tinggi: tinggi,
-            action: (value) {
+            action: (e) {
               Get.offAllNamed(Routes.RIWAYAT);
             },
             img: "assets/nav-history.png",
@@ -74,7 +74,7 @@ class PesananView extends GetView<PesananController> {
           iconnav(
             lebar: lebar,
             tinggi: tinggi,
-            action: (value) {
+            action: (e) {
               Get.offAllNamed(Routes.PROFIL);
             },
             img: "assets/nav-profile.png",
