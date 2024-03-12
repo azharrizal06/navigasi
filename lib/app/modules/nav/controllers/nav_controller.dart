@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:navigasi2/app/modules/cari/views/cari_view.dart';
 import 'package:navigasi2/app/modules/home/views/home_view.dart';
+import 'package:navigasi2/app/modules/profil/views/profil_view.dart';
+import 'package:navigasi2/app/modules/vidio/views/vidio_view.dart';
 
 class NavController extends GetxController {
   RxInt indexWidget = 0.obs;
@@ -11,24 +14,9 @@ class NavController extends GetxController {
 
   List<Widget> myWidgets = [
     HomeView(),
-    Center(
-      child: Text(
-        'Search',
-        style: TextStyle(fontSize: 20),
-      ),
-    ),
-    Center(
-      child: Text(
-        'Reels',
-        style: TextStyle(fontSize: 20),
-      ),
-    ),
-    Center(
-      child: Text(
-        'Shop',
-        style: TextStyle(fontSize: 20),
-      ),
-    ),
+    CariView(),
+    VidioView(),
+    ProfilView(),
     Center(
       child: Text(
         'Profile',

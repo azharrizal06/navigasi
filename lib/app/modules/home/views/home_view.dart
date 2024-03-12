@@ -9,6 +9,7 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.amber,
       appBar: AppBar(
         title: Text('save utama '),
         centerTitle: true,
