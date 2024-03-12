@@ -11,7 +11,7 @@ class HomeView extends GetView<HomeController> {
     var lebar = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        title: Text('navigasiggjgyfyfyf 1'),
+        title: Text('dari file navigasi2'),
         centerTitle: true,
       ),
       body: Center(
